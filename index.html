@@ -1,84 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Name — Homepage</title>
-  <style>
-    body {
-      background: #f2f2f2;
-      font-family: 'Merriweather', serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 2rem;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dimas Adiyaksa — Backend & Infrastructure Engineer</title>
+  <meta name="description" content="Personal site of Dimas Adiyaksa — backend & infrastructure engineer working on distributed systems, developer platforms, and database tooling." />
+  <meta name="author" content="Dimas Adiyaksa" />
 
-    .paper {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 3rem 4rem;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      border-radius: 4px;
-    }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dimas Adiyaksa" />
+  <meta property="og:description" content="Backend & Infrastructure Engineer — distributed systems, developer platforms, database tooling." />
+  <meta property="og:type" content="website" />
 
-    h1 {
-      text-align: center;
-      font-family: 'EB Garamond', serif;
-      margin-bottom: 0.5rem;
-    }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-    .author {
-      text-align: center;
-      font-size: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .author a {
-      color: #004080;
-      text-decoration: none;
-    }
-
-    h2 {
-      font-family: 'EB Garamond', serif;
-      margin-top: 2rem;
-    }
-
-    p {
-      text-align: justify;
-    }
-
-    .abstract {
-      font-style: italic;
-      margin: 1rem 0;
-    }
-
-    hr {
-      margin: 2rem 0;
-      border: none;
-      border-top: 1px solid #ccc;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div class="paper">
-    <h1>Your Name</h1>
-    <div class="author">
-      <p>
-        Email: <a href="mailto:you@example.com">you@example.com</a> ·  
-        GitHub: <a href="https://github.com/username">username</a> ·  
-        LinkedIn: <a href="https://linkedin.com/in/yourprofile">yourprofile</a>
-      </p>
-    </div>
 
-    <hr>
-
-    <h2>Abstract</h2>
-    <p class="abstract">
-      I am a software engineer with expertise in distributed systems, cloud
-      infrastructure, and backend architecture. My focus is on building reliable,
-      scalable applications and bridging research with real-world engineering.
-    </p>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="index.html">Dimas Adiyaksa<span class="dot">.</span></a>
+    <nav class="site-nav" aria-label="primary">
+      <a href="index.html" class="is-active">About</a>
+      <a href="cv.html">CV</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Writings</a>
+    </nav>
   </div>
+</header>
+
+<main>
+
+  <!-- Profile / hero -->
+  <section class="profile">
+    <div class="profile__avatar" aria-hidden="true">DA</div>
+    <div>
+      <h1 class="profile__name">Dimas Adiyaksa</h1>
+      <p class="profile__title">Backend &amp; Infrastructure Engineer</p>
+      <p class="profile__lede">
+        I build the quiet machinery underneath busy systems &mdash; <strong>developer platforms</strong>,
+        <strong>database tooling</strong>, and <strong>cost-aware infrastructure</strong> at scale.
+        Currently at <a href="https://www.traveloka.com" target="_blank" rel="noopener">Traveloka</a>,
+        where I work on platform engineering, observability, and cloud cost optimization.
+      </p>
+
+      <p class="profile__lede">
+        Previously a software engineer at <a href="https://privy.id" target="_blank" rel="noopener">PrivyID</a>,
+        rebuilding signing services and high-traffic document APIs. I write Go and Java for a living,
+        and I&rsquo;m currently engineering <em>Lens</em>, a database proxy for real-time data masking
+        and query auditing.
+      </p>
+
+      <div class="profile__contacts">
+        <a href="mailto:dimasadyaksa@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          dimasadyaksa@gmail.com
+        </a>
+        <a href="https://github.com/dimasadyaksa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2.9-.3 2-.4 3-.4s2.1.1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.6 18.4.5 12 .5z"/></svg>
+          github.com/dimasadyaksa
+        </a>
+        <a href="https://linkedin.com/in/dimasadyaksa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3v9zM6.5 8.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM19 19h-3v-4.7c0-1.1 0-2.6-1.6-2.6S12.6 13 12.6 14.2V19h-3v-9h2.9v1.2h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.6 2 3.6 4.7V19z"/></svg>
+          linkedin.com/in/dimasadyaksa
+        </a>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Tangerang, Indonesia
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected work -->
+  <section class="section">
+    <p class="eyebrow">Selected work</p>
+    <h2>What I&rsquo;ve been building</h2>
+    <p>
+      Over the last few years my work has clustered around three themes: making it safe and easy
+      for engineers to ship database changes, lowering the cost of running large fleets on AWS,
+      and giving teams visibility into what their systems are actually doing.
+    </p>
+    <p>
+      At Traveloka I architected a <strong>Database CI/CD platform</strong> that automates SQL execution
+      across <strong>250+ production databases</strong>, layered with SQL linting and automated unit testing
+      to catch deployment failures before they happen. I also led the organization-wide rollout of
+      <strong>AWS ECS Fargate Spot</strong> across 800+ services, with a recovery system to absorb spot
+      interruptions &mdash; together driving roughly <strong>$1.4M of annualized cost avoidance</strong>.
+    </p>
+    <p>
+      For deeper detail on each of these, see the <a href="cv.html">CV</a> and
+      <a href="projects.html">Projects</a> pages.
+    </p>
+  </section>
+
+  <!-- News -->
+  <section class="section">
+    <p class="eyebrow">News</p>
+    <h2>Recent</h2>
+    <ul class="news">
+      <li>
+        <time datetime="2026-01">Jan 2026</time>
+        <div class="news__body">
+          Started <strong>Lens</strong> &mdash; a database proxy for real-time PII masking,
+          query auditing, and review workflows. Built in Go, sitting on the Postgres wire protocol.
+        </div>
+      </li>
+      <li>
+        <time datetime="2025-09">Sep 2025</time>
+        <div class="news__body">
+          Earned the <strong>Datadog Certified: Log Management Fundamentals</strong> certification.
+        </div>
+      </li>
+      <li>
+        <time datetime="2024-11">Nov 2024</time>
+        <div class="news__body">
+          Wrapped up a guest stint as <strong>Course Creator</strong> at Day 1 Company &mdash;
+          20+ hours of backend engineering content covering event-driven architecture and
+          API design in Node.js.
+        </div>
+      </li>
+      <li>
+        <time datetime="2024-06">Jun 2024</time>
+        <div class="news__body">
+          Shipped <strong>OptiScale</strong>, an internal advisory tool that reads AWS service metrics
+          and surfaces optimization recommendations &mdash; 3,000+ in its first three months.
+        </div>
+      </li>
+      <li>
+        <time datetime="2024-01">Jan 2024</time>
+        <div class="news__body">
+          Joined <strong>Traveloka</strong> as a Backend Infrastructure Engineer.
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  &copy; 2020&ndash;2026 Dimas Adiyaksa &middot;
+  Built with care, hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+</footer>
+
 </body>
 </html>
-

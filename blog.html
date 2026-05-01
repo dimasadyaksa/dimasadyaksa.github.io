@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writings — Dimas Adiyaksa</title>
+  <meta name="description" content="Essays and notes by Dimas Adiyaksa on backend engineering, distributed systems, and platform design." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="index.html">Dimas Adiyaksa<span class="dot">.</span></a>
+    <nav class="site-nav" aria-label="primary">
+      <a href="index.html">About</a>
+      <a href="cv.html">CV</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html" class="is-active">Writings</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="section">
+    <p class="eyebrow">Writings</p>
+    <h1 style="font-style: italic;">Notes from the engine room.</h1>
+    <p style="color: var(--ink-muted); font-size: 1.1rem;">
+      Occasional essays on backend engineering, distributed systems, database tooling,
+      and the parts of platform work that are easier to live through than to explain.
+    </p>
+  </section>
+
+  <section class="section">
+    <ul class="posts">
+      <li>
+        <time datetime="2026-05-02">May 2, 2026</time>
+        <div>
+          <h3><a href="posts/welcome.html">A study in restraint &mdash; on starting a journal</a></h3>
+          <p>Why I&rsquo;m finally writing things down, what I plan to write about, and a quick tour of the rooms in this house.</p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-04">Coming soon</time>
+        <div>
+          <h3 style="color: var(--ink-faint);">Database CI/CD: lessons from 250+ production databases</h3>
+          <p>How we built schema-as-code at scale &mdash; what worked, what didn&rsquo;t, and the surprising amount of organizational design that hides inside an engineering platform.</p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-04">Coming soon</time>
+        <div>
+          <h3 style="color: var(--ink-faint);">Designing Lens: a query-aware proxy for data privacy</h3>
+          <p>Notes on building a Postgres wire-protocol proxy that masks PII, audits queries, and supports just-in-time access &mdash; without becoming a single point of failure.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  &copy; 2020&ndash;2026 Dimas Adiyaksa &middot;
+  Built with care, hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+</footer>
+
+</body>
+</html>

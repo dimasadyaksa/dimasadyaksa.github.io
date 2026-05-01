@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Dimas Adiyaksa</title>
+  <meta name="description" content="Open-source and side projects by Dimas Adiyaksa — Go libraries, database tooling, and more." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="index.html">Dimas Adiyaksa<span class="dot">.</span></a>
+    <nav class="site-nav" aria-label="primary">
+      <a href="index.html">About</a>
+      <a href="cv.html">CV</a>
+      <a href="projects.html" class="is-active">Projects</a>
+      <a href="blog.html">Writings</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="section">
+    <p class="eyebrow">Projects</p>
+    <h1 style="font-style: italic;">Things I&rsquo;ve built, and a few I&rsquo;m still building.</h1>
+    <p style="color: var(--ink-muted); font-size: 1.1rem;">
+      A small but considered collection &mdash; mostly Go libraries shaped around problems
+      I kept hitting at work, plus the occasional larger system worth its own page.
+    </p>
+  </section>
+
+  <section class="section">
+
+    <article class="project">
+      <div class="project__head">
+        <h2 class="project__name">
+          <a href="#" aria-label="Lens Proxy (work in progress)">Lens Proxy</a>
+          <span class="project__badge">Work in progress</span>
+        </h2>
+        <span class="project__year">2026</span>
+      </div>
+      <div class="project__stack">Golang &middot; TCP / wire protocols &middot; SQL AST parsing &middot; proxy re-encryption</div>
+      <p class="project__desc">
+        Lens is a database proxy engineered to automate data privacy and compliance by
+        dynamically <strong>redacting and masking sensitive information in real time</strong>.
+        It audits every query sent to the database and supports query blocking, temporary
+        or one-time access, and a review workflow prior to execution &mdash; effectively
+        turning the database boundary into a programmable policy plane.
+      </p>
+      <div class="project__links">
+        <span style="color: var(--ink-faint);">Coming soon &middot; private repo</span>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <h2 class="project__name">
+          <a href="https://github.com/pkg-id/goval" target="_blank" rel="noopener">Goval</a>
+        </h2>
+        <span class="project__year">2023</span>
+      </div>
+      <div class="project__stack">Golang &middot; functional composition &middot; zero-reflection</div>
+      <p class="project__desc">
+        A high-performance, <strong>zero-reflection validation library for Go</strong> &mdash;
+        built around type safety and developer ergonomics. It leans on functional composition
+        for declarative rules while sidestepping <code>reflect</code> overhead, so it stays fast
+        on the hot path. Concurrency-safe, easily extensible, and built for production use.
+      </p>
+      <div class="project__links">
+        <a href="https://github.com/pkg-id/goval" target="_blank" rel="noopener">github.com/pkg-id/goval</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <h2 class="project__name">
+          <a href="https://github.com/dimasadyaksa/gomap" target="_blank" rel="noopener">Gomap</a>
+        </h2>
+        <span class="project__year">2023</span>
+      </div>
+      <div class="project__stack">Golang &middot; generics &middot; declarative API</div>
+      <p class="project__desc">
+        A type-safe utility library that uses <strong>Go generics</strong> to give maps a
+        declarative API &mdash; high-performance primitives for filtering, reducing, and
+        mapping values, plus set operations like intersection and difference. Designed
+        for extensibility, with the goal of expressing common transformations in as little
+        boilerplate as possible.
+      </p>
+      <div class="project__links">
+        <a href="https://github.com/dimasadyaksa/gomap" target="_blank" rel="noopener">github.com/dimasadyaksa/gomap</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <h2 class="project__name">OptiScale</h2>
+        <span class="project__year">2024</span>
+      </div>
+      <div class="project__stack">Internal at Traveloka &middot; Golang &middot; AWS APIs &middot; rule engine</div>
+      <p class="project__desc">
+        An automated advisory platform that reads AWS service metrics and resource
+        configurations, then evaluates them against industry best practices and internal
+        conventions. Co-designed with Solution Architects to encode optimization heuristics
+        as first-class rules &mdash; the system generated <strong>3,000+ actionable
+        recommendations</strong> in its first three months and contributed to ~$10K+ in
+        cost avoidance.
+      </p>
+      <div class="project__links">
+        <span style="color: var(--ink-faint);">Internal &middot; not open source</span>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <h2 class="project__name">Database CI/CD Platform</h2>
+        <span class="project__year">2024</span>
+      </div>
+      <div class="project__stack">Internal at Traveloka &middot; Golang &middot; PostgreSQL &middot; SQL linting</div>
+      <p class="project__desc">
+        A platform that brings real CI/CD discipline to schema and data changes &mdash;
+        automating SQL execution across <strong>250+ production databases</strong> and
+        adding a validation layer with SQL linting and automated unit testing. Eliminated
+        manual SQL pushes for the engineering org and meaningfully reduced production
+        deployment failures.
+      </p>
+      <div class="project__links">
+        <span style="color: var(--ink-faint);">Internal &middot; not open source</span>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="section" style="text-align:center; color: var(--ink-faint); font-style: italic;">
+    More to come.
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  &copy; 2020&ndash;2026 Dimas Adiyaksa &middot;
+  Built with care, hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+</footer>
+
+</body>
+</html>

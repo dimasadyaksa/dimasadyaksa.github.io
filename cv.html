@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Dimas Adiyaksa</title>
+  <meta name="description" content="Curriculum vitae of Dimas Adiyaksa — backend & infrastructure engineer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="index.html">Dimas Adiyaksa<span class="dot">.</span></a>
+    <nav class="site-nav" aria-label="primary">
+      <a href="index.html">About</a>
+      <a href="cv.html" class="is-active">CV</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Writings</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="section">
+    <p class="eyebrow">Curriculum Vitae</p>
+    <h1 style="font-style: italic;">A working life, abridged.</h1>
+    <p style="color: var(--ink-muted); font-size: 1.1rem;">
+      Five-plus years of backend and infrastructure work, mostly in Go and Java &mdash;
+      with a particular fondness for the boring, load-bearing parts of a stack.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section class="section">
+    <h2>Experience</h2>
+
+    <article class="cv-entry">
+      <div class="cv-entry__head">
+        <div class="cv-entry__org">Traveloka</div>
+        <div class="cv-entry__when">Jan 2024 &mdash; Present</div>
+      </div>
+      <div class="cv-entry__role">Backend Infrastructure Engineer</div>
+      <div class="cv-entry__where">Tangerang, Banten &middot; Indonesia</div>
+
+      <div class="cv-entry__group">
+        <p class="cv-entry__group-title">Developer Productivity &amp; Platform Engineering</p>
+        <ul>
+          <li><strong>Architected and deployed a Database CI/CD platform</strong>, automating SQL execution across <strong>250+ production databases</strong> and eliminating manual intervention.</li>
+          <li><strong>Engineered a validation layer</strong> using SQL linting and automated unit testing inside the Database CI/CD flow, enforcing organizational best practices and reducing production deployment failures.</li>
+          <li><strong>Developed OptiScale</strong>, an automated advisory platform that evaluates AWS service metrics and resource configurations against industry best practices and internal conventions. Generated <strong>3,000+ actionable recommendations</strong> in the first three months and ~$10K+ in cost avoidance.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry__group">
+        <p class="cv-entry__group-title">Compliance &amp; Security</p>
+        <ul>
+          <li>Led technical discovery and architectural requirements for a <strong>Data Access Control</strong> solution to achieve <strong>SOX</strong> and <strong>UU PDP</strong> compliance, focusing on PII redaction and auditability.</li>
+          <li>Conducted vendor risk-benefit analysis and implementation strategy design, overseeing procurement and integration of enterprise-grade database security tooling.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry__group">
+        <p class="cv-entry__group-title">Cost Optimization</p>
+        <ul>
+          <li>Led organization-wide adoption of <strong>AWS ECS Fargate Spot</strong> across <strong>800+ services</strong>, achieving cost avoidance of ~<strong>$19K / month</strong>.</li>
+          <li>Engineered a recovery system to mitigate ECS Fargate Spot unavailability, ensuring high availability despite the ephemeral nature of the infrastructure.</li>
+          <li>Maintain an <strong>85%+ Compute Savings Plan coverage ratio</strong>, balancing cost avoidance against over-provisioning risk &mdash; <strong>~$115K monthly avoidance ($1.4M annualized)</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry__group">
+        <p class="cv-entry__group-title">Observability &amp; Monitoring</p>
+        <ul>
+          <li>Orchestrated a seamless migration of the organization-wide alerting stack from <strong>Slack to Lark</strong>, with zero downtime for <strong>10,000+ daily critical alerts</strong>.</li>
+          <li>Engineered high-visibility <strong>Datadog</strong> dashboards to validate the impact of cost-avoidance initiatives and ensure long-term adherence to optimization strategies.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="cv-entry">
+      <div class="cv-entry__head">
+        <div class="cv-entry__org">Day 1 Company, Inc.</div>
+        <div class="cv-entry__when">Oct 2024 &mdash; Nov 2024</div>
+      </div>
+      <div class="cv-entry__role">Course Creator</div>
+      <div class="cv-entry__where">Korea &middot; Remote</div>
+      <ul>
+        <li><strong>Architected the Backend Engineering curriculum</strong>, designing a roadmap from foundational algorithms and data structures to deploying resilient live systems.</li>
+        <li><strong>Produced 20+ hours of deep-dive technical video content</strong> &mdash; modules on event-driven architecture, asynchronous patterns, and API design in the Node.js ecosystem.</li>
+        <li>Served as a <strong>technical mentor</strong>, providing asynchronous architectural guidance and troubleshooting via Discord.</li>
+      </ul>
+    </article>
+
+    <article class="cv-entry">
+      <div class="cv-entry__head">
+        <div class="cv-entry__org">PrivyID</div>
+        <div class="cv-entry__when">Mar 2021 &mdash; Dec 2023</div>
+      </div>
+      <div class="cv-entry__role">Software Engineer</div>
+      <div class="cv-entry__where">Yogyakarta, Indonesia</div>
+      <ul>
+        <li><strong>Engineered and maintained a diverse ecosystem of backend services</strong> &mdash; from high-throughput core systems and third-party integration layers to specialized on-premises client deployments.</li>
+        <li><strong>Optimized high-traffic document APIs</strong>, leveraging concurrency patterns and multi-layer caching to <strong>reduce latency by 40%</strong>.</li>
+        <li><strong>Rearchitected a resource-constrained on-premises signing service</strong> using event-driven architecture &mdash; resolving chronic OOM errors and increasing RPS capacity by <strong>30% without additional hardware</strong>.</li>
+        <li><strong>Mentored 6 engineers</strong> through the Privy Acceleration Program, providing technical leadership and architectural guidance to ensure alignment with enterprise engineering standards.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <h2>Education</h2>
+    <article class="cv-entry">
+      <div class="cv-entry__head">
+        <div class="cv-entry__org">Sumatera Institute of Technology</div>
+        <div class="cv-entry__when">Aug 2016 &mdash; Sep 2020</div>
+      </div>
+      <div class="cv-entry__role">Bachelor of Informatics Engineering</div>
+      <div class="cv-entry__where">Lampung Selatan, Lampung &middot; Indonesia</div>
+    </article>
+  </section>
+
+  <!-- Skills -->
+  <section class="section">
+    <h2>Technical skills</h2>
+    <dl class="skill-grid">
+      <dt>Languages</dt>
+      <dd>Golang, Java, C, JavaScript, SQL</dd>
+
+      <dt>Databases</dt>
+      <dd>PostgreSQL, MySQL, MongoDB, DynamoDB, Redis</dd>
+
+      <dt>Message brokers</dt>
+      <dd>RabbitMQ, AWS SQS</dd>
+
+      <dt>Cloud platforms</dt>
+      <dd>AWS, Google Cloud Platform</dd>
+
+      <dt>Tooling</dt>
+      <dd>Linux, GitHub &amp; GitHub Actions, Containerization, Datadog</dd>
+    </dl>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section">
+    <h2>Certifications</h2>
+    <article class="cv-entry">
+      <div class="cv-entry__head">
+        <div class="cv-entry__org">Datadog Certified: Log Management Fundamentals</div>
+        <div class="cv-entry__when">2025 &mdash; 2028</div>
+      </div>
+    </article>
+  </section>
+
+  <p style="margin-top: 3rem; font-family: var(--font-sans); font-size: 0.85rem; color: var(--ink-faint);">
+    A printable PDF version is available on request &mdash;
+    <a href="mailto:dimasadyaksa@gmail.com">drop me an email</a>.
+  </p>
+
+</main>
+
+<footer class="site-footer">
+  &copy; 2020&ndash;2026 Dimas Adiyaksa &middot;
+  Built with care, hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+</footer>
+
+</body>
+</html>
