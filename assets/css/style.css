@@ -1,6 +1,6 @@
 /* ============================================================
    Dimas Adiyaksa — personal site
-   Minimalist · journal · Apple-inspired
+   Minimalist · Apple-inspired · all SF/system sans
    ============================================================ */
 
 /* --------------------------------------------------------------
@@ -19,11 +19,9 @@
   --accent:    #0071e3;
   --accent-2:  #0077ed;
 
-  /* Type */
+  /* Type — one system sans, the whole way down (Apple-style) */
   --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
-          "Inter", "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
-  --serif: "Newsreader", "Source Serif 4", "Iowan Old Style",
-           Charter, Georgia, "Times New Roman", serif;
+          "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
   --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
 
   /* Rhythm */
@@ -88,7 +86,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "kern", "liga", "calt", "ss01";
-  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-variant-numeric: lining-nums proportional-nums;
   transition: background-color 0.4s var(--ease), color 0.4s var(--ease);
 }
 
@@ -143,15 +141,13 @@ p { margin: 0 0 1.1em; }
 }
 
 .lead {
-  font-family: var(--serif);
-  font-weight: 350;
-  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
-  line-height: 1.55;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 2.2vw, 1.4rem);
+  line-height: 1.5;
   color: var(--ink-2);
-  letter-spacing: -0.005em;
+  letter-spacing: -0.012em;
 }
 
-.serif { font-family: var(--serif); font-weight: 400; }
 .muted { color: var(--ink-3); }
 .tiny  { font-size: 0.78rem; letter-spacing: 0.04em; color: var(--ink-4); }
 
@@ -260,17 +256,16 @@ main { display: block; }
 .hero__role .sep { color: var(--ink-4); margin: 0 0.55em; }
 
 .hero__lede {
-  margin-top: 2.5rem;
-  font-family: var(--serif);
-  font-weight: 350;
-  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
-  line-height: 1.55;
+  margin-top: 2.25rem;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  line-height: 1.45;
   color: var(--ink-2);
-  letter-spacing: -0.005em;
-  max-width: 38ch;
+  letter-spacing: -0.014em;
+  max-width: 36ch;
 }
 .hero__lede em { font-style: italic; color: var(--ink); }
-.hero__lede strong { font-weight: 550; color: var(--ink); }
+.hero__lede strong { font-weight: 600; color: var(--ink); }
 
 .hero__contacts {
   margin-top: 2.5rem;
@@ -288,7 +283,7 @@ main { display: block; }
    -------------------------------------------------------------- */
 .now {
   background: var(--bg-soft);
-  border-radius: 18px;
+  border-radius: 14px;
   padding: clamp(1.6rem, 3vw, 2.2rem) clamp(1.5rem, 3vw, 2rem);
   margin-top: 1rem;
 }
@@ -298,7 +293,7 @@ main { display: block; }
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--ink-3);
   margin-bottom: 0.85rem;
 }
 .now p { margin: 0; color: var(--ink-2); font-size: 1rem; line-height: 1.6; }
@@ -379,7 +374,7 @@ main { display: block; }
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--ink-3);
   margin-bottom: 0.6rem;
 }
 .entry ul {
@@ -474,13 +469,14 @@ main { display: block; }
 .tag {
   display: inline-flex;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
-  padding: 0.18em 0.65em;
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  color: var(--ink-3);
+  background: var(--bg-soft);
+  padding: 0.22em 0.7em;
+  border: 1px solid var(--line-soft);
   border-radius: 999px;
   margin-left: 0.6rem;
   vertical-align: 0.18em;
@@ -491,11 +487,10 @@ main { display: block; }
    -------------------------------------------------------------- */
 .article-head { margin-bottom: 3rem; }
 .article-head h1 {
-  font-family: var(--serif);
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
   font-size: clamp(2.25rem, 5vw, 3.4rem);
-  line-height: 1.12;
+  line-height: 1.08;
 }
 .article-meta {
   margin-top: 1rem;
@@ -510,22 +505,20 @@ main { display: block; }
 }
 
 .article {
-  font-family: var(--serif);
-  font-size: 1.13rem;
+  font-size: 1.08rem;
   line-height: 1.7;
   color: var(--ink-2);
   font-weight: 400;
+  letter-spacing: -0.01em;
 }
 .article h2 {
-  font-family: var(--sans);
   font-size: 1.4rem;
   font-weight: 600;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
   color: var(--ink);
   margin: 2.4em 0 0.75em;
 }
 .article h3 {
-  font-family: var(--sans);
   font-size: 1.1rem;
   margin: 2em 0 0.6em;
 }
@@ -533,11 +526,13 @@ main { display: block; }
 .article a { color: var(--ink); border-bottom: 1px solid var(--line); }
 .article a:hover { border-bottom-color: var(--ink); color: var(--ink); }
 .article blockquote {
-  margin: 2rem 0;
+  margin: 2.5rem 0;
   padding: 0 0 0 1.4rem;
-  border-left: 2px solid var(--accent);
-  color: var(--ink-2);
-  font-style: italic;
+  border-left: 2px solid var(--line);
+  color: var(--ink);
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.015em;
 }
 .article ul {
   list-style: none;
