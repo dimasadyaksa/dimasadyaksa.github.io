@@ -86,7 +86,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "kern", "liga", "calt", "ss01";
-  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-variant-numeric: lining-nums proportional-nums;
   transition: background-color 0.4s var(--ease), color 0.4s var(--ease);
 }
 
@@ -261,11 +261,11 @@ main { display: block; }
   font-size: clamp(1.25rem, 2.4vw, 1.6rem);
   line-height: 1.45;
   color: var(--ink-2);
-  letter-spacing: -0.018em;
-  max-width: 32ch;
+  letter-spacing: -0.014em;
+  max-width: 36ch;
 }
-.hero__lede em { font-style: normal; color: var(--ink); }
-.hero__lede strong { font-weight: 500; color: var(--ink); }
+.hero__lede em { font-style: italic; color: var(--ink); }
+.hero__lede strong { font-weight: 600; color: var(--ink); }
 
 .hero__contacts {
   margin-top: 2.5rem;
@@ -283,7 +283,7 @@ main { display: block; }
    -------------------------------------------------------------- */
 .now {
   background: var(--bg-soft);
-  border-radius: 18px;
+  border-radius: 14px;
   padding: clamp(1.6rem, 3vw, 2.2rem) clamp(1.5rem, 3vw, 2rem);
   margin-top: 1rem;
 }
@@ -293,7 +293,7 @@ main { display: block; }
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--ink-4);
+  color: var(--ink-3);
   margin-bottom: 0.85rem;
 }
 .now p { margin: 0; color: var(--ink-2); font-size: 1rem; line-height: 1.6; }
@@ -374,7 +374,7 @@ main { display: block; }
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-4);
+  color: var(--ink-3);
   margin-bottom: 0.6rem;
 }
 .entry ul {
@@ -476,6 +476,7 @@ main { display: block; }
   color: var(--ink-3);
   background: var(--bg-soft);
   padding: 0.22em 0.7em;
+  border: 1px solid var(--line-soft);
   border-radius: 999px;
   margin-left: 0.6rem;
   vertical-align: 0.18em;
@@ -505,7 +506,7 @@ main { display: block; }
 
 .article {
   font-size: 1.08rem;
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--ink-2);
   font-weight: 400;
   letter-spacing: -0.01em;
